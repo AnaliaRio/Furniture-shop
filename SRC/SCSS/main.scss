@@ -1,0 +1,12 @@
+// @import 'components/code';
+// @import 'components/links';
+// @import 'pages/index';
+
+// CORE FOLDER
+@import "core/variables";
+@import "core/reset";
+
+// LAYOUT FOLDER
+@import "layout/1-header";
+@import "layout/2-main";
+@import "layout/3-footer";

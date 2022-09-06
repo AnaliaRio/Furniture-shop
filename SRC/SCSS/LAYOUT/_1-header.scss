@@ -1,0 +1,128 @@
+// 1ST MODULE
+
+.header {
+  background-image: url("../images/header.jpg");
+  background-size: cover;
+  background-position: center;
+
+  height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__title {
+    color: $dark-green;
+    font-size: 24px;
+    padding-bottom: 20px;
+    @media all and (min-width: 900px) {
+      font-size: 36px;
+      width: 430px;
+    }
+  }
+
+  &__burger-icon {
+    position: fixed;
+    top: 55px;
+    left: 33px;
+    width: 24px;
+    height: 24px;
+
+    @media all and (min-width: 1380px) {
+      display: none;
+    }
+  }
+
+  &__nav {
+    color: $dark-green;
+    position: fixed;
+    top: 76px;
+    left: 10%;
+
+    @media all and (max-width: 1380px) {
+      display: none;
+    }
+
+    @media all and (min-width: 1380px) {
+      display: block;
+    }
+
+    &__menu {
+      width: 424px;
+      color: $dark-green;
+      text-align: left;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &__item {
+        color: $dark-green;
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 19px;
+    width: 213px;
+    height: 96px;
+
+    @media all and (min-width: 900px) {
+      top: 39px;
+    }
+  }
+
+  &__focus {
+    width: 414px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 900px) {
+      align-items: flex-start;
+      width: 430px;
+      position: relative;
+      left: 10%;
+    }
+  }
+
+  @media all and (min-width: 900px) {
+    align-items: flex-start;
+  }
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media all and (min-width: 900px) {
+    justify-content: flex-start;
+  }
+}
+
+.button {
+  font-family: $font semibold;
+  font-size: 16 px;
+  color: $white;
+  background-color: $dark-green;
+  width: 176px;
+  height: 48px;
+  padding: 12px 24px;
+  cursor: pointer;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  background: #6b8f1a;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.29),
+    inset 0px 0px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button:active {
+  background: lightslategray;
+  box-shadow: 1px 1px 2px rgba(255, 255, 255, 0.29),
+    inset 1px 1px 3px rgba(0, 0, 0, 0.8);
+}

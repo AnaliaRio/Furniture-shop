@@ -1,0 +1,63 @@
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: $dark-green;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  &__section {
+    position: relative;
+    left: 25%;
+    padding: 71px 0 74px 0;
+    text-align: left;
+
+    @media all and (min-width: 415px) {
+      left: 0%;
+    }
+  }
+
+  @media all and (min-width: 415px) {
+    // right: 40%;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 200px;
+    right: 50px;
+
+    animation-name: scale;
+    animation-duration: 5000ms;
+    animation-iteration-count: infinite;
+  }
+}
+
+@keyframes scale {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(2);
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+
+  &--linkedin {
+    padding-right: 10px;
+  }
+
+  &--instragram {
+    padding: 0 10px 0;
+  }
+
+  &--twitter {
+    padding-left: 10px;
+  }
+}

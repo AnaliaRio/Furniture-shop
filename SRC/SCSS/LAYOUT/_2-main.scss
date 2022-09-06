@@ -1,0 +1,231 @@
+// 2ND MODULE - Grid
+
+.spaces {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 113px 280px 280px 280px;
+  text-align: center;
+  justify-content: center;
+  padding: 45px;
+  background-color: $light-grey-background;
+
+  @media all and (min-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25% 75%;
+    padding: 63px 0 73px 0;
+  }
+
+  @media all and (min-width: 1380px) {
+    padding: 42px 0 86px 0;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media all and (min-width: 900px) {
+      grid-column: span 3;
+    }
+  }
+
+  &__title {
+    width: 322px;
+    font-size: 24px;
+    color: $dark-green;
+
+    &--uc {
+      text-transform: uppercase;
+    }
+
+    @media all and (min-width: 900px) {
+      width: 799px;
+    }
+
+    @media all and (min-width: 1380px) {
+      font-size: 36px;
+    }
+  }
+
+  &__article {
+    color: $dark-green;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    &__title {
+      width: 208px;
+    }
+  }
+
+  &__text {
+    width: 208px;
+  }
+
+  &__icon {
+    width: 90px;
+    height: 99px;
+    margin: 37px 121px 47px 111px;
+    object-fit: contain;
+    text-align: center;
+  }
+}
+
+// NEW MODULE
+
+.section-products {
+  width: 100vw;
+  height: 700px;
+  background-color: $dark-green;
+  color: $white;
+
+  &__title {
+    text-align: center;
+    padding: 30px 0;
+  }
+
+  &__subtitle {
+    margin-left: 30px;
+    &__1 {
+      @media all and (min-width: 768px) {
+        padding-left: 30px;
+      }
+    }
+
+    &__2 {
+      @media all and (min-width: 768px) {
+        padding-right: 30px;
+      }
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+
+    @media all and (min-width: 768px) {
+      flex-direction: row;
+    }
+  }
+}
+
+// 3RD MODULE
+
+.shipment {
+  height: 352px;
+  color: #fff;
+  background-color: $orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 46px 0 63px 0;
+
+  @media all and (min-width: 1380px) {
+    height: 400px;
+    padding: 61px 0 90px 0;
+  }
+
+  &__title {
+    font-size: 24px;
+    padding-top: 18px;
+
+    @media all and (min-width: 900px) {
+      font-size: 30px;
+    }
+
+    @media all and (min-width: 1380px) {
+      font-size: 36px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    padding: 10px 0 25px 0;
+
+    @media all and (min-width: 1380px) {
+      font-size: 16px;
+    }
+  }
+
+  & p a {
+    text-decoration: underline;
+    font-size: 16px;
+  }
+}
+
+// 4TH MODULE
+
+.enjoy {
+  display: flex;
+  flex-direction: column;
+
+  &__article {
+    width: 360px;
+    background-color: $light-grey-background;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    font-family: $font semibold;
+    color: $dark-green;
+    padding: 87px 0 92px 0px;
+
+    @media all and (min-width: 900px) {
+      width: 430px;
+    }
+
+    @media all and (min-width: 1380px) {
+      width: 430px;
+      align-items: flex-start;
+      text-align: start;
+    }
+
+    &__item {
+      @media all and (min-width: 1380px) {
+        position: relative;
+        left: 10%;
+      }
+    }
+
+    &__title {
+      font-size: 24px;
+      width: 360px;
+
+      @media all and (min-width: 900px) {
+        font-size: 30px;
+        width: 430px;
+      }
+
+      @media all and (min-width: 1380px) {
+        font-size: 36px;
+        height: 112px;
+      }
+    }
+
+    &__text {
+      font-size: 14px;
+      width: 360px;
+      margin: 10px 0 20px 0;
+
+      @media all and (min-width: 1380px) {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__item {
+    width: 100%;
+  }
+
+  &__image {
+    width: 100%;
+  }
+
+  @media all and (min-width: 1380px) {
+    flex-direction: row;
+  }
+}
